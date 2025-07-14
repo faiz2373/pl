@@ -1,0 +1,15 @@
+{
+  "short_name": "fmc_premium_travel",
+  "name": "fmc_premium_travel",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/ong"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000033",
+  "background_color": "#ffffff"
+}

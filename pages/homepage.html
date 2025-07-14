@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel the World with FMC Holidays - Your Gateway to Great Journeys</title>
+    <meta name="description" content="Luxury travel concierge service offering curated experiences and personalized consultation. Transform your travel dreams into reality with FMC Holidays." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ffmcpremiu4116back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background text-text-primary">
+   <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 w-full z-50 bg-white !bg-opacity-100 shadow-subtle">
+        <div class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 w-full">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                         <img src="../public/Logo.png" alt+="FMC Tours and Travels logo" class="h-12 w-auto">
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-primary font-medium border-b-2 border-primary pb-1">Home</a>
+                        <a href="destinations_gallery.html" class="text-text-secondary hover:text-primary transition-fast">Destinations</a>
+                        <a href="about_us.html" class="text-text-secondary hover:text-primary transition-fast">About Us</a>
+                        <a href="contact_consultation_hub.html" class="text-text-secondary hover:text-primary transition-fast">Contact</a>
+                        <a href="travel_resources_library.html" class="text-text-secondary hover:text-primary transition-fast">Resources</a>
+                    </div>
+                </div>
+
+                <!-- WhatsApp CTA Button -->
+                <div class="hidden md:block">
+                    <a href="https://wa.me/918075637002?text=Hi! I'm interested in planning my dream journey with FMC Tours. Can you help me?" target="_blank" class="bg-accent hover:bg-accent-600 text-white px-6 py-2 rounded-lg font-cta font-medium transition-fast flex items-center space-x-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.700"/>
+                        </svg>
+                        <span>Plan Your Journey</span>
+                    </a>
+                </div>
+              <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary" onclick="toggleMobileMenu()">
+                        <svg class="w-auto h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <div class="px-4 pt-2 pb-3 w-full space-y-1">
+                <a href="homepage.html" class="block px-3 py-2 text-primary font-medium">Home</a>
+                <a href="destinations_gallery.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Destinations</a>
+                <a href="about_us.html" class="block px-3 py-2 text-text-secondary hover:text-primary">About Us</a>
+                <a href="contact_consultation_hub.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Contact</a>
+                <a href="travel_resources_library.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Resources</a>
+                <a href="https://wa.me/918075637002?text=Hi! I'm interested in planning my dream journey with FMC Tours. Can you help me?" target="_blank" class="block mx-3 mt-4 bg-accent text-white px-4 py-2 rounded-lg font-cta font-medium text-center">
+                    Plan Your Journey
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider Section -->
+    <section id="hero" class="relative h-screen pt-16 md:pt-20">
+        <div id="heroSlider" class="hero-slider relative w-full h-full overflow-hidden touch-pan-x select-none">
+  <!-- Slide 1 -->
+  <div class="slide active absolute inset-0 transition-opacity duration-1000">
+    <img src="https://www.dmcmaldives.com/wp-content/uploads/2019/08/blue-ocean-in-maldives-uhd-wallpaper-2560x1440.jpg" alt="maldives vacations" class="w-full h-full object-cover" loading="lazy" />
+    <div class="hero-overlay absolute inset-0"></div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Swiss Alps" class="w-full h-full object-cover" loading="lazy" />
+    <div class="hero-overlay absolute inset-0"></div>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Japan Cherry Blossoms" class="w-full h-full object-cover" loading="lazy" />
+    <div class="hero-overlay absolute inset-0"></div>
+  </div>
+  <div id="swipeArea" class="absolute inset-0 z-10"></div>
+</div>
+
+
+        <!-- Hero Content -->
+        <div class="absolute inset-0 flex items-center justify-center z-10">
+            <div class="text-center text-white max-w-4xl mx-auto px-4">
+                <h1 class="font-display text-4xl md:text-6xl lg:text-hero font-bold mb-6 animate-fade-in">
+                    Travel the World with FMC Holidays,<br />
+                    <span class="text-secondary">Your Gateway to Great Journeys</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90 animate-slide-up">
+                    Looking for the perfect escape? At FMC Holidays, we specialize in unforgettable experiences — from romantic honeymoon tour packages and exciting bachelor tour packages, to handpicked domestic and international tour packages designed just for you.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
+                    <a href="https://wa.me/918075637002?text=Hi! I'm ready to plan my dream journey with FMC Tours. Let's discuss my travel preferences!" target="_blank" class="bg-accent hover:bg-accent-600 text-white px-8 py-4 rounded-xl font-cta font-semibold text-lg transition-smooth flex items-center space-x-3 floating-shadow">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.700"/>
+                        </svg>
+                        <span>Plan Your Dream Journey</span>
+                    </a>
+                    <a href="destinations_gallery.html" class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-xl font-cta font-semibold text-lg transition-smooth">
+                        Explore Destinations
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Navigation -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
+            <button class="slider-dot active w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-fast" onclick="currentSlide(1)"></button>
+            <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-fast" onclick="currentSlide(2)"></button>
+            <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-fast" onclick="currentSlide(3)"></button>
+        </div>
+    </section>
+        <!-- Journey Architect Preview -->
+    <section id="journey-architect" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-montserrat font-bold text-primary mb-4">Journey Architect</h2>
+                <p class="text-xl text-text-secondary max-w-2xl mx-auto">
+                    Create your perfect itinerary with our intelligent trip planning tool
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="card-elevated p-8">
+                    <div class="grid md:grid-cols-4 gap-6 mb-8">
+                        <!-- Type Selection -->
+                        <!-- Travel Type -->
+<div>
+  <label class="block text-sm font-semibold text-gray-700 mb-2">
+    Travel Type
+  </label>
+  <select id="travelType" name="travelType" onchange="updateDestinations()"
+      class="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all">
+      <option disabled selected hidden>Select travel type</option>
+      <option value="international">International</option>
+      <option value="domestic">Domestic</option>
+    </select>
+</div>
+
+<!-- Destination -->
+<div>
+  <label class="block text-sm font-semibold text-gray-700 mb-2">
+    Choose Destination
+  </label>
+ <select id="destination" name="destination"
+      class="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all">
+      <option disabled selected hidden>Select destination</option>
+    </select>
+</div>
+
+<!-- Expected Travel Date -->
+<div>
+  <label for="tripDate" class="block text-sm font-semibold text-gray-700 mb-2">
+    Expected Date
+  </label>
+  <input
+    type="date"
+    name="tripDate"
+    class="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
+  />
+</div>
+
+<!-- Experience Type -->
+<div>
+  <label class="block text-sm font-semibold text-gray-700 mb-2">
+    Experience Type
+  </label>
+  <select name="experience" class="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all">
+    <option disabled selected hidden>Select</option>
+    <option>Honeymoon</option>
+    <option>Cultural Immersion</option>
+    <option>Luxury Relaxation</option>
+    <option>Adventure & Nature</option>
+    <option>Culinary Journey</option>
+    <option>Romantic Getaway</option>
+    <option>Family Adventure</option>
+  </select>
+</div>
+
+                    </div> 
+                    <!-- Generate Itinerary Button -->
+<div class="text-center mt-12">
+  <a
+    id="generateItineraryBtn"
+    href="#"
+    class="inline-flex items-center space-x-2 bg-primary hover:bg-primary-800 text-white px-8 py-4 rounded-xl font-cta font-semibold text-lg transition-smooth"
+  >
+    <span>Generate My Itinerary</span>
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+    </svg>
+  </a>
+</div>
+
+           
+    <!-- Curated Destinations Carousel -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
+                    Curated Premium Destinations
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Discover handpicked destinations that promise transformative experiences. 
+                    Each location is carefully selected for its unique charm and luxury offerings.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Destination Card 1 - Maldives -->
+                <div class="group relative overflow-hidden rounded-2xl card-shadow hover:floating-shadow transition-smooth">
+                    <div class="aspect-w-4 aspect-h-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Maldives Luxury Resort" class="w-full h-64 object-cover group-hover:scale-110 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-900/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="font-display text-xl font-semibold mb-2">Maldives</h3>
+                        <p class="text-sm opacity-90 mb-4">Overwater villas & pristine beaches</p>
+                        <a href="https://wa.me/918075637002?text=I'm interested in the Maldives luxury package. Can you share more details?" target="_blank" class="inline-flex items-center space-x-2 bg-accent hover:bg-accent-600 text-white px-4 py-2 rounded-lg font-cta font-medium text-sm transition-fast">
+                            <span>Enquire Now</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                
+                <div class="group relative overflow-hidden rounded-2xl card-shadow hover:floating-shadow transition-smooth">
+    <div class="aspect-w-4 aspect-h-3 overflow-hidden">
+        <img src="https://plus.unsplash.com/premium_photo-1664298917721-492bc002899b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ladakh" class="w-full h-64 object-cover group-hover:scale-110 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/5053821/pexels-photo-5053821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-t from-primary-900/80 via-transparent to-transparent"></div>
+    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+        <h3 class="font-display text-xl font-semibold mb-2">Ladakh</h3>
+        <p class="text-sm opacity-90 mb-4">Desert mountains and high-altitude wonders</p>
+        <a href="https://wa.me/918075637002?text=Ladakh sounds adventurous! Can you help me craft a high-altitude escape?" target="_blank" class="inline-flex items-center space-x-2 bg-accent hover:bg-accent-600 text-white px-4 py-2 rounded-lg font-cta font-medium text-sm transition-fast">
+            <span>Enquire Now</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+
+                <!-- Destination Card 3 - Japan -->
+                <div class="group relative overflow-hidden rounded-2xl card-shadow hover:floating-shadow transition-smooth">
+                    <div class="aspect-w-4 aspect-h-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Japan Cultural Experience" class="w-full h-64 object-cover group-hover:scale-110 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/161401/fushimi-inari-taisha-shrine-kyoto-japan-temple-161401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-900/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="font-display text-xl font-semibold mb-2">Japan</h3>
+                        <p class="text-sm opacity-90 mb-4">Cultural immersion & cherry blossoms</p>
+                        <a href="https://wa.me/918075637002?text=I'm fascinated by Japan! Can you create a cultural immersion itinerary for me?" target="_blank" class="inline-flex items-center space-x-2 bg-accent hover:bg-accent-600 text-white px-4 py-2 rounded-lg font-cta font-medium text-sm transition-fast">
+                            <span>Enquire Now</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Destination Card 4 - Dubai -->
+                <div class="group relative overflow-hidden rounded-2xl card-shadow hover:floating-shadow transition-smooth">
+    <div class="aspect-w-4 aspect-h-3 overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1556780078-4bd62f24c69e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Kullu Manali" class="w-full h-64 object-cover group-hover:scale-110 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/247600/pexels-photo-247600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-t from-primary-900/80 via-transparent to-transparent"></div>
+    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+        <h3 class="font-display text-xl font-semibold mb-2">Kullu-Manali</h3>
+        <p class="text-sm opacity-90 mb-4">Snowy peaks and pine-filled valleys</p>
+        <a href="https://wa.me/918075637002?text=I'd love to visit Kullu-Manali! Can you help plan a scenic mountain retreat?" target="_blank" class="inline-flex items-center space-x-2 bg-accent hover:bg-accent-600 text-white px-4 py-2 rounded-lg font-cta font-medium text-sm transition-fast">
+            <span>Enquire Now</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+
+                <!-- Destination Card 5 - Bali -->
+                <div class="group relative overflow-hidden rounded-2xl card-shadow hover:floating-shadow transition-smooth">
+                    <div class="aspect-w-4 aspect-h-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Bali Tropical Paradise" class="w-full h-64 object-cover group-hover:scale-110 transition-smooth" loading="lazy" onerror="this.src='https://images.pixabay.com/photo-2017/01/28/02/24/japan-2014616_1280.jpg'; this.onerror=null;" />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-900/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="font-display text-xl font-semibold mb-2">Bali</h3>
+                        <p class="text-sm opacity-90 mb-4">Tropical paradise & spiritual wellness</p>
+                        <a href="https://wa.me/918075637002?text=I'm interested in a Bali wellness retreat! Can you share package details?" target="_blank" class="inline-flex items-center space-x-2 bg-accent hover:bg-accent-600 text-white px-4 py-2 rounded-lg font-cta font-medium text-sm transition-fast">
+                            <span>Enquire Now</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Destination Card 6 - Thailand -->
+                <div class="group relative overflow-hidden rounded-2xl card-shadow hover:floating-shadow transition-smooth">
+                    <div class="aspect-w-4 aspect-h-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Thailand Adventure" class="w-full h-64 object-cover group-hover:scale-110 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1007426/pexels-photo-1007426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-900/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="font-display text-xl font-semibold mb-2">Thailand</h3>
+                        <p class="text-sm opacity-90 mb-4">Island hopping & cultural temples</p>
+                        <a href="https://wa.me/918075637002?text=Thailand looks incredible! Can you help me plan an island hopping adventure?" target="_blank" class="inline-flex items-center space-x-2 bg-accent hover:bg-accent-600 text-white px-4 py-2 rounded-lg font-cta font-medium text-sm transition-fast">
+                            <span>Enquire Now</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="destinations_gallery.html" class="inline-flex items-center space-x-2 bg-primary hover:bg-primary-800 text-white px-8 py-4 rounded-xl font-cta font-semibold text-lg transition-smooth">
+                    <span>View All Destinations</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Trust Indicators Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+  <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
+    Trusted by Thousands, Certified by Industry Leaders
+  </h2>
+
+  <p class="text-xl font-semibold text-text-secondary mb-4">
+    Planning your dream vacation is easy with our expert support in:
+  </p>
+
+  <ul class="space-y-2 text-lg text-gray-800 max-w-2xl mx-auto">
+    <li>Hassle-free global visa services</li>
+    <li>Quick and affordable air ticketing</li>
+    <li>Seasonal specials like monsoon tour packages</li>
+  </ul>
+</div>
+
+
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Certification 1 -->
+                <div class="text-center p-6 bg-surface rounded-2xl">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">IATA Certified</h3>
+                    <p class="text-sm text-text-secondary">International Air Transport Association</p>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="text-center p-6 bg-surface rounded-2xl">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Secure Payments</h3>
+                    <p class="text-sm text-text-secondary">SSL Encrypted & PCI Compliant</p>
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="text-center p-6 bg-surface rounded-2xl">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Award Winner</h3>
+                    <p class="text-sm text-text-secondary">Best Luxury Travel Agency 2024</p>
+                </div>
+
+                <!-- Certification 4 -->
+                <div class="text-center p-6 bg-surface rounded-2xl">
+                    <div class="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Travel Insurance</h3>
+                    <p class="text-sm text-text-secondary">Comprehensive Coverage Included</p>
+                </div>
+            </div>
+        </div>
+    </section>
+                 <!-- WhatsApp CTA -->
+     <section>
+        <div class="text-center mb-6">
+        <p class="text-xl font-medium text-gray-700">
+            Whether it’s a quick weekend getaway or a world tour, <span class="font-semibold text-primary">FMC Holidays</span> is your trusted travel companion.
+        </p>
+    </div>
+            <div class="text-center">
+                <a href="https://wa.me/918075637002?text=Hello! I'd like to start planning my dream vacation. Can you help me explore the best options?" target="_blank" class="inline-flex items-center space-x-3 bg-accent hover:bg-accent-600 text-white px-8 py-4 rounded-xl font-cta font-semibold text-lg transition-smooth floating-shadow">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.700"/>
+                    </svg>
+                    <span>Start Your Consultation Now</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                         <a href="homepage.html" class="flex items-center space-x-2">
+                        <img src="../public/Logo.png" alt+="FMC Tours and Travels logo" class="w-16 h-8 text-seconday" fill="currentColor" viewBox="0 0 24 24">
+                    </a> 
+                        <span class="font-display text-xl font-semibold">FMC Holidays</span>
+                    </div>
+                    <p class="text-primary-200 mb-4">
+                        Your dreams, our expertise, unforgettable reality. 
+                        Transforming wanderlust into extraordinary journeys.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/fmcholidays/" class="text-primary-200 hover:text-white transition-fast">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg>
+                        </a>
+                        <a href="https://www.facebook.com/fmcholidays/" class="text-primary-200 hover:text-white transition-fast">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg>
+                        </a>
+                        <a href="#" class="text-primary-200 hover:text-white transition-fast">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-primary-200 hover:text-white transition-fast">Home</a></li>
+                        <li><a href="destinations_gallery.html" class="text-primary-200 hover:text-white transition-fast">Destinations</a></li>
+                        <li><a href="about_us.html" class="text-primary-200 hover:text-white transition-fast">About Us</a></li>
+                        <li><a href="contact_consultation_hub.html" class="text-primary-200 hover:text-white transition-fast">Contact</a></li>
+                        <li><a href="travel_resources_library.html" class="text-primary-200 hover:text-white transition-fast">Travel Resources</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><span class="text-primary-200">Luxury Packages</span></li>
+                        <li><span class="text-primary-200">Custom Itineraries</span></li>
+                        <li><span class="text-primary-200">Group Travel</span></li>
+                        <li><span class="text-primary-200">Corporate Travel</span></li>
+                        <li><span class="text-primary-200">Travel Insurance</span></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Get in Touch</h3>
+                    <div class="space-y-3">
+                        <a href="https://wa.me/918075637002" target="_blank" class="flex items-center space-x-3 text-primary-200 hover:text-white transition-fast">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.700"/>
+                            </svg>
+                            <span>+91 80756 37002</span>
+                        </a>
+                        <div class="flex items-center space-x-3 text-primary-200">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <span>info@fmctours.com</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-primary-200">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <span>Kozhikode, Kerala, India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-700 pt-8 text-center">
+                <p class="text-primary-200">
+                    © 2025 FMC Tours and Travels. All Rights Reserved. | 
+                    <a href="#" class="hover:text-white transition-fast">Privacy Policy</a> | 
+                    <a href="#" class="hover:text-white transition-fast">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+       
+  const internationalDestinations = [
+    "Malaysia", "Singapore", "Bali (Indonesia)", "Thailand", "Vietnam",
+    "Cambodia", "Philippines", "Dubai", "Kazakhstan", "Maldives",
+    "Georgia", "Bhutan", "Japan", "Nepal"
+  ];
+
+  const domesticDestinations = [
+    "Andaman and Nicobar Islands", "Lakshadweep", "Kashmir", "Kulu-Manali",
+    "Ladakh", "Delhi-Agra", "Meghalaya"
+  ];
+
+  function updateDestinations() {
+    const travelType = document.getElementById("travelType").value;
+    const destinationSelect = document.getElementById("destination");
+
+    // Clear previous options
+    destinationSelect.innerHTML = `<option disabled selected hidden>Select destination</option>`;
+
+    const selectedList = travelType === "international" ? internationalDestinations : domesticDestinations;
+
+    selectedList.forEach(dest => {
+      const option = document.createElement("option");
+      option.value = dest;
+      option.textContent = dest;
+      destinationSelect.appendChild(option);
+    });
+  }
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+      const slides = document.querySelectorAll("#heroSlider .slide");
+  const dots = document.querySelectorAll(".slider-dot");
+  let current = 0;
+  let startX = 0;
+  let endX = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      slide.classList.add("opacity-0");
+      if (i === index) {
+        slide.classList.add("active");
+        slide.classList.remove("opacity-0");
+      }
+    });
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+      dot.classList.toggle("opacity-100", i === index);
+      dot.classList.toggle("opacity-50", i !== index);
+    });
+
+    current = index;
+  }
+
+  function currentSlide(n) {
+    showSlide(n - 1);
+  }
+
+  function handleSwipe() {
+    const diff = endX - startX;
+    if (Math.abs(diff) > 50) {
+      if (diff < 0) {
+        // swipe left → next
+        const next = (current + 1) % slides.length;
+        showSlide(next);
+      } else {
+        // swipe right → previous
+        const prev = (current - 1 + slides.length) % slides.length;
+        showSlide(prev);
+      }
+    }
+  }
+
+const swipeArea = document.getElementById("swipeArea");
+swipeArea.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+swipeArea.addEventListener("touchend", (e) => {
+  endX = e.changedTouches[0].clientX;
+  handleSwipe();
+});
+
+
+  // Initialize first slide
+  document.addEventListener("DOMContentLoaded", () => {
+    showSlide(0);
+
+    // Optional auto-slide every 6 seconds
+    setInterval(() => {
+      const next = (current + 1) % slides.length;
+      showSlide(next);
+    }, 6000);
+  });
+        
+
+ document.getElementById("generateItineraryBtn").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const travelType = document.querySelector('select[name="travelType"]')?.value;
+    const destination = document.querySelector('select[name="destination"]')?.value;
+    const tripDate = document.querySelector('input[name="tripDate"]')?.value;
+    const experience = document.querySelector('select[name="experience"]')?.value;
+
+    if (
+      !travelType || travelType === "Select" ||
+      !destination || destination === "Select" ||
+      !tripDate ||
+      !experience || experience === "Select"
+    ) {
+      alert("Please fill all fields before generating your itinerary.");
+      return;
+    }
+
+    const message = `Hello, I would like to plan my trip with these preferences:
+
+🔹 Travel Type: ${travelType}
+📍 Destination: ${destination}
+📅 Expected Travel Date: ${tripDate}
+🌍 Experience Type: ${experience}`;
+
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappNumber = "918075637002"; // Update with your agency's number
+
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
+  });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-white/98');
+                nav.classList.remove('bg-white/95');
+            } else {
+                nav.classList.add('bg-white/95');
+                nav.classList.remove('bg-white/98');
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+<style>
+  .slide {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    inset: 0;
+  }
+
+  .slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .slider-dot.active {
+    transform: scale(1.2);
+  }
+
+  /* Swipe area overlay layer (transparent but blocks touch) */
+ #swipeArea {
+  z-index: 5;
+  touch-action: pan-y;
+}
+
+  /* Optional: make swipe area only active on smaller screens */
+  @media (min-width: 768px) {
+    #swipeArea {
+      cursor: default;
+    }
+  }
+</style>
+
+
+
+</body>
+</html>
